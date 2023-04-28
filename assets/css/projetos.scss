@@ -1,0 +1,130 @@
+#projetos {
+    padding: 80px 0;
+    
+    .projetos-cards {
+        width: 100%;
+        max-width: 1000px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 50px;
+
+        .img-card {
+            height: 180px;
+            width: 100%;
+            max-width: 400px;
+            min-width: 300px;
+            background-color: #ffffff;
+            border-left: 5px solid #CD0000;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            overflow: hidden;
+            transition: ease-in-out 0.5s;
+            
+            &:hover {
+                border-left: none;
+                letter-spacing: 5px;
+                transform: scale(1.05);
+            }
+
+            div {
+                background-color: #CD0000;
+                width: 1000px;
+                text-align: center;
+                padding: 5% 0;
+                transform: rotate(-50deg);
+            }
+
+            p {
+                font-size: 2rem;
+            }
+
+        }
+
+        .descricao-card {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            margin-bottom: 20px;
+
+            h2 {
+                font-size: 2rem;
+                margin-top: 20px;
+            }
+
+            p {
+                font-size: 1.5rem;
+                width: 100%;
+                max-width: 390px;
+            }
+
+            .inativo {
+                margin-bottom: 15px;
+            }
+
+            .info-text {
+                color: #CD0000;
+                font-weight: bold;
+            }
+
+        }
+
+        .button-visualizar {
+            background-color: #302f2f00;
+            width: 100%;
+            max-width: 110px;
+            padding: 10px;
+    
+            font-size: 1.5rem;
+
+            display: flex;
+            justify-content: center;
+    
+            border: 2px solid #CD0000;
+            border-radius: 10px;
+    
+    
+            &:hover {
+                background-color: #302f2f;
+                border: 2px solid #e90202;
+                cursor: pointer;
+            }
+
+            a {
+                text-decoration: none;
+            }
+        }
+    }  
+}
+
+@media (max-width: 909px) {
+    #projetos > .centralizador > .ajustes2 > .projetos-cards {
+
+        .card {
+            width: 100%;
+            max-width: 600px;
+
+            .img-card {
+                width: 100%;
+                max-width: 600px;  
+                min-width: 200px;
+                height: 160px;
+            }
+
+            p {
+                width: 100%;
+                max-width: 600px;  
+            }
+
+            .button-visualizar {
+                width: 100%;
+                max-width: 200px;
+                font-size: 1.7rem;
+            }
+        }
+    }
+
+}

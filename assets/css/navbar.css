@@ -1,0 +1,104 @@
+header {
+  background-color: rebeccapurple;
+  font-weight: bold;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  border-bottom: 1px solid rgba(86, 86, 89, 0.3568627451);
+  background: rgba(80, 79, 79, 0.082);
+}
+header .container-navbar {
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+header .container-navbar .img-logo img {
+  padding: 5px;
+  max-width: 50%;
+  min-width: 90px;
+}
+header .container-navbar nav ul {
+  display: flex;
+  gap: 30px;
+  font-size: 15px;
+  list-style: none;
+}
+header .container-navbar nav ul li a {
+  transition: 450ms;
+  text-decoration: none;
+}
+header .container-navbar nav ul li a:hover {
+  cursor: pointer;
+  color: #CD0000;
+}
+
+@media (max-width: 830px) {
+  .container-navbar {
+    padding: 0;
+  }
+  nav {
+    display: none;
+  }
+  .one,
+  .two,
+  .theree {
+    background-color: #CD0000;
+    height: 5px;
+    width: 100%;
+    margin: 6px;
+    transition-duration: 0.3s;
+  }
+  .menu-toggle {
+    cursor: pointer;
+    width: 40px;
+    height: 30px;
+    margin-right: 20px;
+  }
+  .menu-section.on {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.768627451);
+    width: 100vw;
+    height: 100vh;
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+  }
+  .menu-section.on nav {
+    display: block;
+  }
+  .menu-section.on .menu-toggle {
+    position: absolute;
+    right: 25px;
+    top: 20px;
+  }
+  .menu-section.on .menu-toggle .one {
+    transform: rotate(45deg) translate(7px, 7px);
+  }
+  .menu-section.on .menu-toggle .two {
+    opacity: 0;
+  }
+  .menu-section.on .menu-toggle .theree {
+    transform: rotate(-45deg) translate(8px, -9px);
+  }
+  .container-navbar .menu-section.on nav ul {
+    gap: 0;
+    text-align: center;
+    flex-direction: column;
+  }
+  .menu-section.on nav a {
+    padding: 0 20px;
+    transition-duration: 0.5s;
+    font-size: 3rem;
+    line-height: 7rem;
+    display: block;
+  }
+  .menu-section.on nav a:hover {
+    background-color: rgba(255, 255, 255, 0.0901960784);
+  }
+}/*# sourceMappingURL=navbar.css.map */

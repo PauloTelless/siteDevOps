@@ -1,0 +1,111 @@
+#habilidades {
+  background-color: #1A1A1B;
+  padding: 80px 0;
+}
+#habilidades .skills-descricao {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+}
+#habilidades .skills-descricao .conteiner-skills {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+#habilidades .skills-descricao .skill-box {
+  height: 106px;
+  width: 106px;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  background-repeat: no-repeat;
+  background-position: center;
+  transition: ease 0.3s;
+  background-color: #C4C4C4;
+}
+#habilidades .skills-descricao .skill-box:hover {
+  background-color: white;
+  transform: scale(1.05);
+}
+#habilidades .skills-descricao .conteiner-descricao {
+  width: 100%;
+  max-width: 350px;
+  height: 220px;
+  font-family: "Inter", sans-serif;
+  font-size: 2rem;
+}
+
+.ajustes2 {
+  padding: 0 30px;
+}
+.ajustes2 h1 {
+  margin-bottom: 60px;
+}
+
+@media (max-width: 950px) {
+  #habilidades .skills-descricao {
+    justify-content: center;
+    gap: 10px;
+  }
+  #habilidades .skills-descricao .skill-box {
+    height: 96px;
+    width: 96px;
+  }
+  #habilidades .skills-descricao .skill-box img {
+    height: 80%;
+    width: 80%;
+  }
+  #habilidades .skills-descricao .conteiner-descricao {
+    height: 190px;
+    font-size: 2rem;
+  }
+}
+@media (max-width: 850px) {
+  #habilidades .skills-descricao .skill-box {
+    height: 90px;
+    width: 90px;
+  }
+  #habilidades .skills-descricao .conteiner-descricao {
+    height: 180px;
+    width: 100%;
+    max-width: 290px;
+    font-size: 1.7rem;
+  }
+}
+@media (max-width: 765px) {
+  #habilidades .skills-descricao {
+    gap: 10px;
+  }
+  #habilidades .skills-descricao .skill-box {
+    height: 76px;
+    width: 76px;
+  }
+  #habilidades .skills-descricao .conteiner-descricao {
+    height: 160px;
+    max-width: 260px;
+    font-size: 1.8rem;
+  }
+}
+@media (max-width: 685px) {
+  #habilidades .skills-descricao {
+    gap: 40px;
+    flex-direction: column;
+  }
+  #habilidades .skills-descricao .conteiner-skills {
+    width: 100%;
+    max-width: 390px;
+  }
+  #habilidades .skills-descricao .skill-box {
+    height: 86px;
+    width: 86px;
+  }
+  #habilidades .skills-descricao .conteiner-descricao {
+    height: auto;
+    max-width: 420px;
+    font-size: 1.8rem;
+  }
+}/*# sourceMappingURL=habilidades.css.map */
